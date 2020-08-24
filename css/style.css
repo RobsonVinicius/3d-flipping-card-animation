@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  font-family: sans-serif;
 }
 
 body {
@@ -26,7 +27,7 @@ body {
 }
 
 .card:hover .card__container {
-  transform: rotateY(.25turn);
+  transform: rotateY(.5turn);
 }
 
 .card__front, 
@@ -37,6 +38,16 @@ body {
   left: 0;
   right: 0;
   padding: 2em;
+  backface-visibility: hidden;
 }
 
+.card__title {
+  font-size: 3rem;
+  transform: translateZ(200px);
+}
+
+.card__back {
+  transform: rotateY(.5turn);
+  background: lightblue;
+}
 
