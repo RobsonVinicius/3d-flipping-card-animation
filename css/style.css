@@ -1,9 +1,23 @@
+:root {
+  --lv-one: translateZ(3rem);
+  --lv-two: translateZ(6rem);
+  --lv-three: translateZ(9rem);
+
+  --font-normal: 400;
+  --font-bold: 700;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: none;  
   font-family: sans-serif;
+}
+
+@font-face {
+  font-family: 'Metal Lord';
+  src: url(../fonts/metallord.ttf);
 }
 
 body {
@@ -13,8 +27,7 @@ body {
 }
 
 .card {
-  width: 400px;
-  
+  width: 400px;  
 }
 
 .card__container {
@@ -39,11 +52,28 @@ body {
   right: 0;
   padding: 2em;
   backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.card__front {
+  background: lightgreen;
+  display: grid;
 }
 
 .card__title {
   font-size: 3rem;
-  transform: translateZ(200px);
+  font-family: 'Metal Lord';
+  transform: var(--lv-three);
+  order: 2;
+  
+}
+
+.card__subtitle {
+  transform: var(--lv-two);
+}
+
+.card__body {
+  transform: var(--lv-one);
 }
 
 .card__back {
@@ -51,3 +81,4 @@ body {
   background: lightblue;
 }
 
+ 
