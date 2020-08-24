@@ -53,23 +53,28 @@ body {
   padding: 2em;
   backface-visibility: hidden;
   transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
 }
 
 .card__front {
-  background: lightgreen;
-  display: grid;
+  background: lightgreen;  
 }
 
 .card__title {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-family: 'Metal Lord';
   transform: var(--lv-three);
-  order: 2;
-  
+  order: 2;  
 }
 
 .card__subtitle {
   transform: var(--lv-two);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 1.3rem;
+  font-weight: var(--font-bold);
+  opacity: .7;
 }
 
 .card__body {
