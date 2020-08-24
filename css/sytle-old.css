@@ -2,11 +2,13 @@
   --lv-one: translateZ(3rem);
   --lv-two: translateZ(6rem);
   --lv-three: translateZ(9rem);
-  
-  --fonte-normal: 400;
-  --fonte-bold: 700;
-  
-  --color: #b7c9e5;
+
+  --font-normal: 400;
+  --font-bold: 700;
+
+  --color: #b7c8e5;
+
+  --space: 1rem;
 }
 
 *, *::before, *::after {
@@ -26,7 +28,6 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
-  font-family: sans-serif;
 }
 
 .card {
@@ -37,7 +38,8 @@ body {
   text-align: center;
   position: relative;
   padding: 15em 5em;
-  transition: transform 3s;  
+  transition: transform 3s;
+  background: coral;
   transform-style: preserve-3d;
 }
 
@@ -45,71 +47,64 @@ body {
   transform: rotateY(.5turn);
 }
 
-.card__front,
+.card__front, 
 .card__back {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  /* padding: 5em 3em; */
+  padding: 5em 3rem;
   backface-visibility: hidden;
   transform-style: preserve-3d;
   display: grid;
-  align-content: center;  
+  align-content: center;
 }
 
 .card__front {
-  background-color: var(--color);
-  background-image: url(../img/front.jpg);
-  background-size: cover;
-  background-position: center;  
-  background-blend-mode: multiply;  
+  background: lightgreen;   
 }
 
 .card__front::before {
   content: '';
-  position: absolute;
-  --spacer: 1em;
-  top: var(--spacer);
-  bottom: var(--spacer);
-  left: var(--spacer);
-  right: var(--spacer);
-  border: 2px solid #b7c9e5;
+  display: absolute;
+  --space: 1em;
+  top: var(--space);
+  bottom: var(--space);
+  left: var(--space);
+  right: var(--space);
+  border: 3px solid black;
   transform: var(--lv-one);
 }
 
 .card__title {
-  font-size: 2.55rem;  
-  transform: var(--lv-three);
-  order: 2;
+  font-size: 2.5rem;
   font-family: 'Metal Lord';
-  text-transform: uppercase;
-  margin-top: 10px;
-  color: #b7c9e5;
+  transform: var(--lv-three);
+  order: 2;  
 }
 
 .card__subtitle {
   transform: var(--lv-two);
   text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 1.1rem;
-  font-weight: var(--fonte-bold);
-  color: #ddbc02;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 4px;
+  font-size: 1.3rem;
+  font-weight: var(--font-bold);
+  opacity: .7;
 }
 
 .card__body {
-  transform: var(--lv-two);
-  font-weight: var(--fonte-normal);
-  font-size: 1.3rem;
-  line-height: 1.4;  
+  transform: var(--lv-one);
+  font-weight: var(--font-normal);
+  font-size: 1.5rem;
+  line-height: 1.6;
 }
 
 .card__back {
-  transform: rotateY(.5turn);  
-  color: var(--color);
-  background: #333;
+  transform: rotateY(.5turn);
+  color: var();
+  background: var(--color);
+  
 }
 
-
+ 
