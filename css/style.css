@@ -80,7 +80,7 @@ body {
 }
 
 .card__title {
-  font-size: 3rem;  
+  font-size: 3.3rem;  
   transform: var(--lv-three);
   order: 2;
   font-family: 'Metal Lord';
@@ -93,7 +93,7 @@ body {
   transform: var(--lv-two);
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   font-weight: var(--fonte-bold);
   color: #ddbc02;
   font-family: Georgia, 'Times New Roman', Times, serif;
