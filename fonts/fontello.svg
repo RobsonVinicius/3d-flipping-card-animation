@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2020 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="spotify" unicode="&#xf1bc;" d="M629 175q0 18-17 28-107 64-249 64-74 0-160-19-24-5-24-29 0-11 8-19t20-8q2 0 20 5 74 15 136 15 126 0 221-58 11-6 19-6 10 0 18 8t8 19z m54 120q0 22-20 34-132 79-306 79-85 0-169-24-27-7-27-36 0-14 10-23t24-10q4 0 20 4 69 19 141 19 155 0 272-69 13-8 21-8 14 0 24 10t10 24z m60 138q0 26-23 39-70 41-163 62t-191 21q-114 0-204-26-12-4-21-15t-9-27q0-17 12-29t28-11q7 0 23 4 74 21 171 21 89 0 173-19t141-53q12-7 23-7 16 0 28 11t12 29z m114-83q0-117-57-215t-156-156-215-58-216 58-155 156-58 215 58 215 155 156 216 58 215-58 156-156 57-215z" horiz-adv-x="857.1" />
+</font>
+</defs>
+</svg>
