@@ -109,9 +109,13 @@ body {
 .card__back {
   transform: rotateY(.5turn);  
   color: var(--color);
-  background: #333;
+  background: #757373;
   text-align: left;
-  padding-left: 50px
+  padding-left: 50px;
+  background-image: url(../img/back.jpg);
+  background-size: cover;
+  background-position: center;  
+  background-blend-mode: multiply;  
 }
 
 .btn-spotify {
